@@ -1,3 +1,5 @@
+package lk.ijse;
+
 import lk.ijse.config.FactoryConfiguration;
 import lk.ijse.entity.Laptop;
 import lk.ijse.entity.Student;
@@ -11,12 +13,10 @@ public class Main {
         Session session = FactoryConfiguration.getFactoryConfiguration().getSession();
         Transaction transaction = session.beginTransaction();
 
-        Student student = session.get(Student.class,1);
+        Student s = session.get(Student.class,1);
+        System.out.println(s);
 
-        List<Laptop> laptops = student.getLaptop();
-        for (Laptop laptop:laptops) {
-            System.out.println(laptop.getModel());
-        }
+
 
         transaction.commit();
         session.close();

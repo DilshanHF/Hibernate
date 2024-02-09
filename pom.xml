@@ -13,6 +13,7 @@
         <module>onetomany</module>
         <module>manytomany</module>
         <module>lazyFetching</module>
+        <module>egerFetching</module>
     </modules>
 
     <properties>
