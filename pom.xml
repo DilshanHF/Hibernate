@@ -12,6 +12,7 @@
         <module>onetoone</module>
         <module>onetomany</module>
         <module>manytomany</module>
+        <module>lazyFetching</module>
     </modules>
 
     <properties>
